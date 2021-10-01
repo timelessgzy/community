@@ -2,6 +2,7 @@ package cn.tjgzy.community;
 
 import cn.tjgzy.community.dao.DiscussPostMapper;
 import cn.tjgzy.community.dao.LoginTicketMapper;
+import cn.tjgzy.community.dao.MessageMapper;
 import cn.tjgzy.community.dao.UserMapper;
 import cn.tjgzy.community.entity.DiscussPost;
 import cn.tjgzy.community.entity.LoginTicket;
@@ -27,6 +28,9 @@ public class MapperTests {
 
     @Autowired
     LoginTicketMapper loginTicketMapper;
+
+    @Autowired
+    MessageMapper messageMapper;
 
     @Test
     public void testSelect() {
@@ -55,5 +59,9 @@ public class MapperTests {
 
         int i = loginTicketMapper.insertLoginTicket(loginTicket);
         System.out.println(i);
+    }
+
+    @Test
+    public void testMessageMapper() {
     }
 }
