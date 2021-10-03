@@ -52,6 +52,7 @@ public class UserService implements CommunityConstant {
 
 
     public User findUserById(int id) {
+        System.out.println("开始查询User");
         return userMapper.selectById(id);
     }
 

@@ -2,6 +2,7 @@ package cn.tjgzy.community.controller;
 
 import cn.tjgzy.community.annotation.LoginRequired;
 import cn.tjgzy.community.entity.User;
+import cn.tjgzy.community.service.LikeService;
 import cn.tjgzy.community.service.UserService;
 import cn.tjgzy.community.util.CommunityUtil;
 import cn.tjgzy.community.util.HostHolder;
@@ -50,6 +51,9 @@ public class UserController {
 
     @Autowired
     private HostHolder hostHolder;
+
+    @Autowired
+    private LikeService likeService;
 
     @LoginRequired
     @GetMapping("/setting")
@@ -123,6 +127,22 @@ public class UserController {
             return "/site/setting";
         }
         return "redirect:/index";
+    }
+
+
+    @GetMapping("/profile/{userId}")
+    public String getProfilePage(@PathVariable int userId, Model model) {
+         User user = userService.findUserById(userId);
+         if (user == null) {
+             throw new RuntimeException("该用户不存在！");
+         }
+         // 用户
+         model.addAttribute("user",user);
+         // 点赞数量
+        int likeCount = likeService.findUserLikeCount(userId);
+        model.addAttribute("likeCount",likeCount);
+        return "/site/profile";
+
     }
 
 }

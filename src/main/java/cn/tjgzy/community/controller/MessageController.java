@@ -140,5 +140,14 @@ public class MessageController {
         return CommunityUtil.getJSONString(0);
     }
 
+    @PostMapping("/letter/delete/{messageId}")
+    public String deleteMessage(@PathVariable int messageId) {
+        int row = messageService.deleteMessage(messageId);
+        if (row >= 1) {
+            return CommunityUtil.getJSONString(0);
+        } else {
+            return CommunityUtil.getJSONString(1,"删除失败，请稍候重试");
+        }
+    }
 
 }
