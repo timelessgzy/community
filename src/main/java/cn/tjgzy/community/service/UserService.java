@@ -7,9 +7,11 @@ import cn.tjgzy.community.entity.User;
 import cn.tjgzy.community.util.CommunityConstant;
 import cn.tjgzy.community.util.CommunityUtil;
 import cn.tjgzy.community.util.MailClient;
+import cn.tjgzy.community.util.RedisKeyUtil;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -32,14 +34,17 @@ public class UserService implements CommunityConstant {
     @Autowired
     private UserMapper userMapper;
 
-    @Autowired
-    private LoginTicketMapper loginTicketMapper;
+//    @Autowired
+//    private LoginTicketMapper loginTicketMapper;
 
     @Autowired
     private MailClient mailClient;
 
     @Autowired
     private TemplateEngine templateEngine;
+
+    @Autowired
+    private RedisTemplate redisTemplate;
 
     @Value("${community.path.domain}")
     private String domain;
@@ -165,18 +170,26 @@ public class UserService implements CommunityConstant {
         loginTicket.setTicket(CommunityUtil.generateUUID());
         loginTicket.setExpired(new Date(System.currentTimeMillis() + expiredSeconds * 1000));
 
-        loginTicketMapper.insertLoginTicket(loginTicket);
+//        loginTicketMapper.insertLoginTicket(loginTicket);
+        String redisKey = RedisKeyUtil.getTicketKey(loginTicket.getTicket());
+        redisTemplate.opsForValue().set(redisKey,loginTicket);
 
         map.put("ticket",loginTicket.getTicket());
         return map;
     }
 
     public void logOut(String ticket) {
-        loginTicketMapper.updateStatus(ticket,1);
+//        loginTicketMapper.updateStatus(ticket,1);
+        String redisKey = RedisKeyUtil.getTicketKey(ticket);
+        LoginTicket loginTicket = (LoginTicket) redisTemplate.opsForValue().get(redisKey);
+        loginTicket.setStatus(1);
+        redisTemplate.opsForValue().set(redisKey,loginTicket);
     }
 
     public LoginTicket findLoginTicket(String ticket) {
-        LoginTicket loginTicket = loginTicketMapper.selectByTicket(ticket);
+//        LoginTicket loginTicket = loginTicketMapper.selectByTicket(ticket);
+        String redisKey = RedisKeyUtil.getTicketKey(ticket);
+        LoginTicket loginTicket = (LoginTicket) redisTemplate.opsForValue().get(redisKey);
         return loginTicket;
     }
 

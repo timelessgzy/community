@@ -3,11 +3,12 @@ package cn.tjgzy.community.dao;
 import cn.tjgzy.community.entity.LoginTicket;
 import org.apache.ibatis.annotations.*;
 
-/**
+/** 废弃，采用redis存储登录凭证
  * @author GongZheyi
  * @create 2021-09-30-13:21
  */
 @Mapper
+@Deprecated
 public interface LoginTicketMapper {
 
     @Insert({
