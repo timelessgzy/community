@@ -21,12 +21,12 @@ public interface CommunityConstant {
     int ACTIVATION_FAILURE = 2;
 
     /**
-     * 默认保存12小时
+     * 默认保存 12 小时
      */
     int DEFAULT_EXPIRED_SECONDS = 3600 * 12;
 
     /**
-     * 保存100天
+     * 保存 100 天
      */
     int REMEMBER_EXPIRED_SECONDS = 3600 * 24 * 100;
 
@@ -39,4 +39,9 @@ public interface CommunityConstant {
      * 实体类型：评论
      */
     int ENTITY_TYPE_COMMENT = 2;
+
+    /**
+     * 实体类型：用户
+     */
+    int ENTITY_TYPE_USER = 3;
 }
