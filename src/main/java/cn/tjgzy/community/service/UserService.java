@@ -23,6 +23,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @author GongZheyi
@@ -56,10 +57,20 @@ public class UserService implements CommunityConstant {
     private String contextPath;
 
 
+    /**
+     * 优化后从Redis缓存中查找
+     * @param id
+     * @return
+     */
     public User findUserById(int id) {
-        System.out.println("开始查询User");
-        return userMapper.selectById(id);
+//        return userMapper.selectById(id);
+        User user = getCache(id);
+        if (user == null) {
+            user = initCache(id);
+        }
+        return user;
     }
+
 
     public Map<String, Object> register(User user) {
         Map<String, Object> map = new HashMap<>();
@@ -124,6 +135,8 @@ public class UserService implements CommunityConstant {
         }
         if (user.getActivationCode().equals(code)) {
             userMapper.updateStatus(userId,1);
+            // 清理缓存
+            clearCache(userId);
             return ACTIVATION_SUCCESS;
         } else {
             return ACTIVATION_FAILURE;
@@ -194,7 +207,13 @@ public class UserService implements CommunityConstant {
     }
 
     public int updateHeader(int userId, String headerUrl) {
-        return userMapper.updateHeader(userId,headerUrl);
+//        return userMapper.updateHeader(userId,headerUrl);
+        /**
+         * 先更新，再删缓存
+         */
+        int i = userMapper.updateHeader(userId, headerUrl);
+        clearCache(userId);
+        return i;
     }
 
     public Map<String,Object> updatePassword(int userId, String oldPassWord,  String newPassword) {
@@ -221,5 +240,35 @@ public class UserService implements CommunityConstant {
     public User findUserByUsername(String username) {
         return userMapper.selectByName(username);
     }
+
+    /**
+     * 优先从缓存中找User数据
+     * @param userId
+     * @return
+     */
+    private User getCache(int userId) {
+        String redisKey = RedisKeyUtil.getUserKey(userId);
+        return (User) redisTemplate.opsForValue().get(redisKey);
+    }
+
+    /**
+     * 从数据库中查找user并且加入缓存
+     * @param userId
+     * @return
+     */
+    private User initCache(int userId) {
+        User user = userMapper.selectById(userId);
+        String redisKey = RedisKeyUtil.getUserKey(userId);
+        redisTemplate.opsForValue().set(redisKey,user,3600, TimeUnit.SECONDS);
+        return user;
+    }
+
+    private void clearCache(int userId) {
+        String redisKey = RedisKeyUtil.getUserKey(userId);
+        redisTemplate.delete(redisKey);
+    }
+
+
+
 
 }
