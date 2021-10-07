@@ -47,3 +47,9 @@ Caused by: java.net.NoRouteToHostException: No route to host: no further informa
 2021-10-07 12:14:23,891 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:1069] [Consumer clientId=consumer-test-consumer-group-2, groupId=test-consumer-group] Synchronous auto-commit of offsets {publish-0=OffsetAndMetadata{offset=0, leaderEpoch=null, metadata=''}} failed: Offset commit cannot be completed since the consumer is not part of an active group for auto partition assignment; it is likely that the consumer was kicked out of the group.
 2021-10-07 12:14:45,545 WARN [HikariPool-1 housekeeper] c.z.h.p.HikariPool [HikariPool.java:788] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=59m47s322ms742µs300ns).
 2021-10-07 12:26:06,365 WARN [restartedMain] o.s.d.e.s.VersionInfo [VersionInfo.java:75] Version mismatch in between Elasticsearch Client and Cluster: 7.12.1 - 7.4.2
+2021-10-07 15:26:50,695 WARN [restartedMain] o.s.d.e.s.VersionInfo [VersionInfo.java:75] Version mismatch in between Elasticsearch Client and Cluster: 7.12.1 - 7.4.2
+2021-10-07 15:27:42,083 WARN [restartedMain] o.s.d.e.s.VersionInfo [VersionInfo.java:75] Version mismatch in between Elasticsearch Client and Cluster: 7.12.1 - 7.4.2
+2021-10-07 15:31:57,339 WARN [restartedMain] o.s.d.e.s.VersionInfo [VersionInfo.java:75] Version mismatch in between Elasticsearch Client and Cluster: 7.12.1 - 7.4.2
+2021-10-07 15:34:29,093 WARN [restartedMain] o.s.d.e.s.VersionInfo [VersionInfo.java:75] Version mismatch in between Elasticsearch Client and Cluster: 7.12.1 - 7.4.2
+2021-10-07 16:10:06,068 WARN [restartedMain] o.s.d.e.s.VersionInfo [VersionInfo.java:75] Version mismatch in between Elasticsearch Client and Cluster: 7.12.1 - 7.4.2
+2021-10-07 16:10:33,093 WARN [restartedMain] o.s.d.e.s.VersionInfo [VersionInfo.java:75] Version mismatch in between Elasticsearch Client and Cluster: 7.12.1 - 7.4.2
