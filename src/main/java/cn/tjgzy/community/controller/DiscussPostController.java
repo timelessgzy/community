@@ -88,7 +88,12 @@ public class DiscussPostController implements CommunityConstant {
         model.addAttribute("likeStatus",status);
 
 
-        // TODO:帖子的回复
+        // 登录用户的权限
+        int type = user.getType();
+        model.addAttribute("type",type);
+
+
+        // 帖子的回复
         // 评论的分页信息
         page.setLimit(5);
         page.setPath("/discuss/detail/" + discussPostId);

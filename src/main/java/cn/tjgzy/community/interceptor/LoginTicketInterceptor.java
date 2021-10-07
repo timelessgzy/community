@@ -46,6 +46,7 @@ public class LoginTicketInterceptor implements HandlerInterceptor {
                 System.out.println("prehandle:" + user);
                 // 暂存user
                 hostHolder.setUser(user);
+
                 // 构建用户认证结果，并存入SecurityContext，以便于security进行授权
                 Authentication authentication = new UsernamePasswordAuthenticationToken(
                         user,user.getPassword(), userService.getAuthorities(user.getId()));

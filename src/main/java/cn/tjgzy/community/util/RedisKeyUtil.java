@@ -1,5 +1,7 @@
 package cn.tjgzy.community.util;
 
+import org.omg.CORBA.DATA_CONVERSION;
+
 /**
  * @author GongZheyi
  * @create 2021-10-03-15:50
@@ -15,6 +17,10 @@ public class RedisKeyUtil {
     private static final String PREFIX_KAPTCHA = "kaptcha";
     private static final String PREFIX_TICKET = "ticket";
     private static final String PREFIX_USER = "user";
+
+    private static final String PREFIX_UV = "uv";
+    private static final String PREFIX_DAU = "dau";
+
 
 
     /**
@@ -75,4 +81,31 @@ public class RedisKeyUtil {
         return PREFIX_USER + SPLIT + userId;
     }
 
+    /**
+     * 单日UV
+     */
+    public static String getUVKey(String date) {
+        return PREFIX_UV + SPLIT + date;
+    }
+
+    /**
+     * 区间UV
+     */
+    public static String getUVKey(String startDate, String endDate) {
+        return PREFIX_UV + SPLIT + startDate + SPLIT + endDate;
+    }
+
+    /**
+     * 单日活跃用户
+     */
+    public static String getDAUKey(String date) {
+        return PREFIX_DAU + SPLIT + date;
+    }
+
+    /**
+     * 区间活跃用户
+     */
+    public static String getDAUKey(String startDate, String endDate) {
+        return PREFIX_DAU + SPLIT + startDate + SPLIT + endDate;
+    }
 }
