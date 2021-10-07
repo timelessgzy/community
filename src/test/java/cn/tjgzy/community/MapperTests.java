@@ -6,6 +6,7 @@ import cn.tjgzy.community.dao.MessageMapper;
 import cn.tjgzy.community.dao.UserMapper;
 import cn.tjgzy.community.entity.DiscussPost;
 import cn.tjgzy.community.entity.LoginTicket;
+import cn.tjgzy.community.entity.Message;
 import cn.tjgzy.community.entity.User;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -63,5 +64,15 @@ public class MapperTests {
 
     @Test
     public void testMessageMapper() {
+        Message message = new Message();
+        message.setContent("111");
+        message.setCreateTime(new Date());
+        message.setConversationId("test");
+        message.setToId(10);
+        message.setFromId(1);
+        message.setStatus(1);
+        messageMapper.insertMessage(message);
+        int i = messageMapper.selectLetterCount("111_112");
+        System.out.println(i);
     }
 }

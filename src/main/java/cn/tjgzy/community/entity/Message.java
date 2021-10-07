@@ -13,6 +13,7 @@ public class Message {
     private String conversationId;
     private String content;
     private int status;
+    private Date createTime;
 
     public int getStatus() {
         return status;
@@ -22,7 +23,7 @@ public class Message {
         this.status = status;
     }
 
-    private Date createTime;
+
 
     public int getId() {
         return id;

@@ -1,0 +1,1217 @@
+2021-10-04 10:27:12,378 INFO [restartedMain] c.t.c.CommunityApplication [StartupInfoLogger.java:55] Starting CommunityApplication using Java 1.8.0_261 on LAPTOP-2EJHU1V2 with PID 13608 (F:\Java\community\target\classes started by 龚哲毅 in F:\Java\community)
+2021-10-04 10:27:12,382 INFO [restartedMain] c.t.c.CommunityApplication [SpringApplication.java:659] No active profile set, falling back to default profiles: default
+2021-10-04 10:27:12,423 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-10-04 10:27:12,423 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-10-04 10:27:13,283 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:262] Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-10-04 10:27:13,285 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-10-04 10:27:13,309 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2021-10-04 10:27:13,959 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2021-10-04 10:27:13,966 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-10-04 10:27:13,966 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-10-04 10:27:13,967 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.53]
+2021-10-04 10:27:14,050 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-10-04 10:27:14,050 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:290] Root WebApplicationContext: initialization completed in 1626 ms
+2021-10-04 10:27:15,057 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2021-10-04 10:27:15,319 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2021-10-04 10:27:15,336 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-10-04 10:27:15,351 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/community'
+2021-10-04 10:27:15,361 INFO [restartedMain] c.t.c.CommunityApplication [StartupInfoLogger.java:61] Started CommunityApplication in 3.485 seconds (JVM running for 4.639)
+2021-10-04 10:27:29,630 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-10-04 10:27:29,631 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2021-10-04 10:27:29,632 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 1 ms
+2021-10-04 10:27:29,661 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:29],访问了[cn.tjgzy.community.service.DiscussPostService.findDiscussPostRows].
+2021-10-04 10:27:29,690 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-10-04 10:27:30,396 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-10-04 10:27:30,453 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:30],访问了[cn.tjgzy.community.service.DiscussPostService.findDiscussPosts].
+2021-10-04 10:27:30,482 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:30],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 10:27:30,513 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:30],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 10:27:31,300 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:31],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 10:27:31,347 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:31],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 10:27:31,374 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:31],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 10:27:31,401 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:31],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 10:27:31,432 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:31],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 10:27:31,457 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:31],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 10:27:31,484 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:31],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 10:27:31,512 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:31],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 10:27:31,544 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:31],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 10:27:31,569 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:31],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 10:27:31,596 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:31],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 10:27:31,621 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:31],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 10:27:31,647 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:31],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 10:27:31,672 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:31],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 10:27:31,699 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:31],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 10:27:31,725 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:31],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 10:27:31,751 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:31],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 10:27:31,776 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:31],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 10:27:38,012 INFO [http-nio-8080-exec-8] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:38],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 10:27:38,060 INFO [http-nio-8080-exec-8] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:38],访问了[cn.tjgzy.community.service.LikeService.findUserLikeCount].
+2021-10-04 10:27:38,107 INFO [http-nio-8080-exec-8] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:38],访问了[cn.tjgzy.community.service.FollowService.findFolloweeCount].
+2021-10-04 10:27:38,139 INFO [http-nio-8080-exec-8] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:38],访问了[cn.tjgzy.community.service.FollowService.findFollowerCount].
+2021-10-04 10:27:53,414 INFO [http-nio-8080-exec-10] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:53],访问了[cn.tjgzy.community.service.UserService.login].
+2021-10-04 10:27:53,781 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:53],访问了[cn.tjgzy.community.service.UserService.findLoginTicket].
+2021-10-04 10:27:53,807 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:53],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 10:27:53,833 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:53],访问了[cn.tjgzy.community.service.DiscussPostService.findDiscussPostRows].
+2021-10-04 10:27:53,859 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:53],访问了[cn.tjgzy.community.service.DiscussPostService.findDiscussPosts].
+2021-10-04 10:27:53,898 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:53],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 10:27:53,924 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:53],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 10:27:53,979 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:53],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 10:27:54,003 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:54],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 10:27:54,029 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:54],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 10:27:54,056 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:54],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 10:27:54,082 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:54],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 10:27:54,109 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:54],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 10:27:54,137 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:54],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 10:27:54,162 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:54],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 10:27:54,189 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:54],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 10:27:54,215 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:54],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 10:27:54,242 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:54],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 10:27:54,268 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:54],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 10:27:54,293 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:54],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 10:27:54,318 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:54],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 10:27:54,344 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:54],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 10:27:54,368 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:54],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 10:27:54,394 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:54],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 10:27:54,418 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:54],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 10:27:57,093 INFO [http-nio-8080-exec-3] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:57],访问了[cn.tjgzy.community.service.UserService.findLoginTicket].
+2021-10-04 10:27:57,141 INFO [http-nio-8080-exec-3] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:57],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 10:27:57,166 INFO [http-nio-8080-exec-3] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:57],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 10:27:57,195 INFO [http-nio-8080-exec-3] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:57],访问了[cn.tjgzy.community.service.LikeService.findUserLikeCount].
+2021-10-04 10:27:57,223 INFO [http-nio-8080-exec-3] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:57],访问了[cn.tjgzy.community.service.FollowService.findFolloweeCount].
+2021-10-04 10:27:57,250 INFO [http-nio-8080-exec-3] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:57],访问了[cn.tjgzy.community.service.FollowService.findFollowerCount].
+2021-10-04 10:27:57,277 INFO [http-nio-8080-exec-3] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:57],访问了[cn.tjgzy.community.service.FollowService.hasFollowed].
+2021-10-04 10:27:58,379 INFO [http-nio-8080-exec-9] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:58],访问了[cn.tjgzy.community.service.UserService.findLoginTicket].
+2021-10-04 10:27:58,458 INFO [http-nio-8080-exec-9] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:58],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 10:27:58,485 INFO [http-nio-8080-exec-9] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:27:58],访问了[cn.tjgzy.community.service.FollowService.follow].
+2021-10-04 10:28:02,369 INFO [http-nio-8080-exec-10] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:28:02],访问了[cn.tjgzy.community.service.UserService.findLoginTicket].
+2021-10-04 10:28:02,417 INFO [http-nio-8080-exec-10] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:28:02],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 10:28:02,443 INFO [http-nio-8080-exec-10] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:28:02],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 10:28:02,470 INFO [http-nio-8080-exec-10] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:28:02],访问了[cn.tjgzy.community.service.LikeService.findUserLikeCount].
+2021-10-04 10:28:02,499 INFO [http-nio-8080-exec-10] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:28:02],访问了[cn.tjgzy.community.service.FollowService.findFolloweeCount].
+2021-10-04 10:28:02,528 INFO [http-nio-8080-exec-10] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:28:02],访问了[cn.tjgzy.community.service.FollowService.findFollowerCount].
+2021-10-04 10:28:02,557 INFO [http-nio-8080-exec-10] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:28:02],访问了[cn.tjgzy.community.service.FollowService.hasFollowed].
+2021-10-04 10:28:03,781 INFO [http-nio-8080-exec-5] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:28:03],访问了[cn.tjgzy.community.service.UserService.findLoginTicket].
+2021-10-04 10:28:03,830 INFO [http-nio-8080-exec-5] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:28:03],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 10:28:03,854 INFO [http-nio-8080-exec-5] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:28:03],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 10:28:03,882 INFO [http-nio-8080-exec-5] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:28:03],访问了[cn.tjgzy.community.service.LikeService.findUserLikeCount].
+2021-10-04 10:28:03,911 INFO [http-nio-8080-exec-5] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:28:03],访问了[cn.tjgzy.community.service.FollowService.findFolloweeCount].
+2021-10-04 10:28:03,939 INFO [http-nio-8080-exec-5] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:28:03],访问了[cn.tjgzy.community.service.FollowService.findFollowerCount].
+2021-10-04 10:28:03,969 INFO [http-nio-8080-exec-5] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:28:03],访问了[cn.tjgzy.community.service.FollowService.hasFollowed].
+2021-10-04 10:28:04,298 INFO [http-nio-8080-exec-8] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:28:04],访问了[cn.tjgzy.community.service.UserService.findLoginTicket].
+2021-10-04 10:28:04,324 INFO [http-nio-8080-exec-8] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:28:04],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 10:28:04,350 INFO [http-nio-8080-exec-8] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:28:04],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 10:28:04,376 INFO [http-nio-8080-exec-8] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:28:04],访问了[cn.tjgzy.community.service.LikeService.findUserLikeCount].
+2021-10-04 10:28:04,402 INFO [http-nio-8080-exec-8] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:28:04],访问了[cn.tjgzy.community.service.FollowService.findFolloweeCount].
+2021-10-04 10:28:04,429 INFO [http-nio-8080-exec-8] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:28:04],访问了[cn.tjgzy.community.service.FollowService.findFollowerCount].
+2021-10-04 10:28:04,455 INFO [http-nio-8080-exec-8] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:28:04],访问了[cn.tjgzy.community.service.FollowService.hasFollowed].
+2021-10-04 10:28:04,903 INFO [http-nio-8080-exec-4] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:28:04],访问了[cn.tjgzy.community.service.UserService.findLoginTicket].
+2021-10-04 10:28:04,951 INFO [http-nio-8080-exec-4] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:28:04],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 10:28:04,975 INFO [http-nio-8080-exec-4] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:28:04],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 10:28:05,000 INFO [http-nio-8080-exec-4] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:28:05],访问了[cn.tjgzy.community.service.LikeService.findUserLikeCount].
+2021-10-04 10:28:05,026 INFO [http-nio-8080-exec-4] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:28:05],访问了[cn.tjgzy.community.service.FollowService.findFolloweeCount].
+2021-10-04 10:28:05,055 INFO [http-nio-8080-exec-4] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:28:05],访问了[cn.tjgzy.community.service.FollowService.findFollowerCount].
+2021-10-04 10:28:05,081 INFO [http-nio-8080-exec-4] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:28:05],访问了[cn.tjgzy.community.service.FollowService.hasFollowed].
+2021-10-04 10:30:35,114 INFO [http-nio-8080-exec-9] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:30:35],访问了[cn.tjgzy.community.service.UserService.findLoginTicket].
+2021-10-04 10:30:35,297 INFO [http-nio-8080-exec-9] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:30:35],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 10:30:35,323 INFO [http-nio-8080-exec-9] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:30:35],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 10:30:35,352 INFO [http-nio-8080-exec-9] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:30:35],访问了[cn.tjgzy.community.service.LikeService.findUserLikeCount].
+2021-10-04 10:30:35,385 INFO [http-nio-8080-exec-9] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:30:35],访问了[cn.tjgzy.community.service.FollowService.findFolloweeCount].
+2021-10-04 10:30:35,411 INFO [http-nio-8080-exec-9] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:30:35],访问了[cn.tjgzy.community.service.FollowService.findFollowerCount].
+2021-10-04 10:30:35,437 INFO [http-nio-8080-exec-9] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:30:35],访问了[cn.tjgzy.community.service.FollowService.hasFollowed].
+2021-10-04 10:30:36,156 INFO [http-nio-8080-exec-2] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:30:36],访问了[cn.tjgzy.community.service.UserService.findLoginTicket].
+2021-10-04 10:30:36,204 INFO [http-nio-8080-exec-2] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:30:36],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 10:30:36,229 INFO [http-nio-8080-exec-2] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:30:36],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 10:30:36,253 INFO [http-nio-8080-exec-2] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:30:36],访问了[cn.tjgzy.community.service.LikeService.findUserLikeCount].
+2021-10-04 10:30:36,279 INFO [http-nio-8080-exec-2] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:30:36],访问了[cn.tjgzy.community.service.FollowService.findFolloweeCount].
+2021-10-04 10:30:36,305 INFO [http-nio-8080-exec-2] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:30:36],访问了[cn.tjgzy.community.service.FollowService.findFollowerCount].
+2021-10-04 10:30:36,333 INFO [http-nio-8080-exec-2] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:30:36],访问了[cn.tjgzy.community.service.FollowService.hasFollowed].
+2021-10-04 10:30:37,377 INFO [http-nio-8080-exec-7] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:30:37],访问了[cn.tjgzy.community.service.UserService.findLoginTicket].
+2021-10-04 10:30:37,425 INFO [http-nio-8080-exec-7] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:30:37],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 10:30:37,453 INFO [http-nio-8080-exec-7] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:30:37],访问了[cn.tjgzy.community.service.FollowService.unfollow].
+2021-10-04 10:30:38,814 INFO [http-nio-8080-exec-8] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:30:38],访问了[cn.tjgzy.community.service.UserService.findLoginTicket].
+2021-10-04 10:30:38,860 INFO [http-nio-8080-exec-8] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:30:38],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 10:30:38,887 INFO [http-nio-8080-exec-8] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:30:38],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 10:30:38,912 INFO [http-nio-8080-exec-8] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:30:38],访问了[cn.tjgzy.community.service.LikeService.findUserLikeCount].
+2021-10-04 10:30:38,938 INFO [http-nio-8080-exec-8] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:30:38],访问了[cn.tjgzy.community.service.FollowService.findFolloweeCount].
+2021-10-04 10:30:38,964 INFO [http-nio-8080-exec-8] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:30:38],访问了[cn.tjgzy.community.service.FollowService.findFollowerCount].
+2021-10-04 10:30:38,991 INFO [http-nio-8080-exec-8] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:30:38],访问了[cn.tjgzy.community.service.FollowService.hasFollowed].
+2021-10-04 10:30:39,808 INFO [http-nio-8080-exec-4] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:30:39],访问了[cn.tjgzy.community.service.UserService.findLoginTicket].
+2021-10-04 10:30:39,854 INFO [http-nio-8080-exec-4] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:30:39],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 10:30:39,879 INFO [http-nio-8080-exec-4] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:30:39],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 10:30:39,904 INFO [http-nio-8080-exec-4] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:30:39],访问了[cn.tjgzy.community.service.LikeService.findUserLikeCount].
+2021-10-04 10:30:39,932 INFO [http-nio-8080-exec-4] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:30:39],访问了[cn.tjgzy.community.service.FollowService.findFolloweeCount].
+2021-10-04 10:30:39,961 INFO [http-nio-8080-exec-4] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:30:39],访问了[cn.tjgzy.community.service.FollowService.findFollowerCount].
+2021-10-04 10:30:39,990 INFO [http-nio-8080-exec-4] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:30:39],访问了[cn.tjgzy.community.service.FollowService.hasFollowed].
+2021-10-04 10:31:06,842 INFO [http-nio-8080-exec-7] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:31:06],访问了[cn.tjgzy.community.service.UserService.findLoginTicket].
+2021-10-04 10:31:06,893 INFO [http-nio-8080-exec-7] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:31:06],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 10:31:06,919 INFO [http-nio-8080-exec-7] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:31:06],访问了[cn.tjgzy.community.service.FollowService.follow].
+2021-10-04 10:31:33,331 INFO [http-nio-8080-exec-8] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:31:33],访问了[cn.tjgzy.community.service.UserService.findLoginTicket].
+2021-10-04 10:31:33,483 INFO [http-nio-8080-exec-8] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:31:33],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 10:31:33,507 INFO [http-nio-8080-exec-8] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:31:33],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 10:31:33,531 INFO [http-nio-8080-exec-8] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:31:33],访问了[cn.tjgzy.community.service.LikeService.findUserLikeCount].
+2021-10-04 10:31:33,561 INFO [http-nio-8080-exec-8] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:31:33],访问了[cn.tjgzy.community.service.FollowService.findFolloweeCount].
+2021-10-04 10:31:33,586 INFO [http-nio-8080-exec-8] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:31:33],访问了[cn.tjgzy.community.service.FollowService.findFollowerCount].
+2021-10-04 10:31:33,612 INFO [http-nio-8080-exec-8] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:31:33],访问了[cn.tjgzy.community.service.FollowService.hasFollowed].
+2021-10-04 10:31:35,940 INFO [http-nio-8080-exec-4] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:31:35],访问了[cn.tjgzy.community.service.UserService.findLoginTicket].
+2021-10-04 10:31:35,989 INFO [http-nio-8080-exec-4] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:31:35],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 10:31:36,013 INFO [http-nio-8080-exec-4] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:31:36],访问了[cn.tjgzy.community.service.FollowService.unfollow].
+2021-10-04 10:31:36,166 INFO [http-nio-8080-exec-2] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:31:36],访问了[cn.tjgzy.community.service.UserService.findLoginTicket].
+2021-10-04 10:31:36,191 INFO [http-nio-8080-exec-2] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:31:36],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 10:31:36,215 INFO [http-nio-8080-exec-2] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:31:36],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 10:31:36,239 INFO [http-nio-8080-exec-2] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:31:36],访问了[cn.tjgzy.community.service.LikeService.findUserLikeCount].
+2021-10-04 10:31:36,266 INFO [http-nio-8080-exec-2] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:31:36],访问了[cn.tjgzy.community.service.FollowService.findFolloweeCount].
+2021-10-04 10:31:36,292 INFO [http-nio-8080-exec-2] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:31:36],访问了[cn.tjgzy.community.service.FollowService.findFollowerCount].
+2021-10-04 10:31:36,319 INFO [http-nio-8080-exec-2] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:31:36],访问了[cn.tjgzy.community.service.FollowService.hasFollowed].
+2021-10-04 10:31:37,867 INFO [http-nio-8080-exec-7] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:31:37],访问了[cn.tjgzy.community.service.UserService.findLoginTicket].
+2021-10-04 10:31:37,918 INFO [http-nio-8080-exec-7] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:31:37],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 10:31:37,943 INFO [http-nio-8080-exec-7] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:31:37],访问了[cn.tjgzy.community.service.FollowService.follow].
+2021-10-04 10:31:38,094 INFO [http-nio-8080-exec-8] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:31:38],访问了[cn.tjgzy.community.service.UserService.findLoginTicket].
+2021-10-04 10:31:38,119 INFO [http-nio-8080-exec-8] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:31:38],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 10:31:38,143 INFO [http-nio-8080-exec-8] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:31:38],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 10:31:38,167 INFO [http-nio-8080-exec-8] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:31:38],访问了[cn.tjgzy.community.service.LikeService.findUserLikeCount].
+2021-10-04 10:31:38,194 INFO [http-nio-8080-exec-8] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:31:38],访问了[cn.tjgzy.community.service.FollowService.findFolloweeCount].
+2021-10-04 10:31:38,219 INFO [http-nio-8080-exec-8] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:31:38],访问了[cn.tjgzy.community.service.FollowService.findFollowerCount].
+2021-10-04 10:31:38,245 INFO [http-nio-8080-exec-8] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 10:31:38],访问了[cn.tjgzy.community.service.FollowService.hasFollowed].
+2021-10-04 11:45:17,540 INFO [restartedMain] c.t.c.CommunityApplication [StartupInfoLogger.java:55] Starting CommunityApplication using Java 1.8.0_261 on LAPTOP-2EJHU1V2 with PID 46292 (F:\Java\community\target\classes started by 龚哲毅 in F:\Java\community)
+2021-10-04 11:45:17,543 INFO [restartedMain] c.t.c.CommunityApplication [SpringApplication.java:659] No active profile set, falling back to default profiles: default
+2021-10-04 11:45:17,595 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-10-04 11:45:17,595 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-10-04 11:45:18,241 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:262] Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-10-04 11:45:18,243 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-10-04 11:45:18,263 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2021-10-04 11:45:18,840 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2021-10-04 11:45:18,846 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-10-04 11:45:18,847 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-10-04 11:45:18,847 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.53]
+2021-10-04 11:45:18,929 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-10-04 11:45:18,929 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:290] Root WebApplicationContext: initialization completed in 1333 ms
+2021-10-04 11:45:19,696 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2021-10-04 11:45:19,943 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2021-10-04 11:45:19,962 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-10-04 11:45:19,976 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/community'
+2021-10-04 11:45:19,986 INFO [restartedMain] c.t.c.CommunityApplication [StartupInfoLogger.java:61] Started CommunityApplication in 2.982 seconds (JVM running for 3.973)
+2021-10-04 11:45:48,268 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-10-04 11:45:48,268 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2021-10-04 11:45:48,269 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 1 ms
+2021-10-04 11:45:48,281 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:48],访问了[cn.tjgzy.community.service.UserService.findLoginTicket].
+2021-10-04 11:45:48,294 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-10-04 11:45:48,958 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-10-04 11:45:49,008 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:49],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 11:45:49,046 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:49],访问了[cn.tjgzy.community.service.DiscussPostService.findDiscussPostRows].
+2021-10-04 11:45:49,085 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:49],访问了[cn.tjgzy.community.service.DiscussPostService.findDiscussPosts].
+2021-10-04 11:45:49,116 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:49],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 11:45:49,142 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:49],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 11:45:49,948 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:49],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 11:45:49,997 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:49],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 11:45:50,025 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:50],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 11:45:50,050 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:50],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 11:45:50,077 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:50],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 11:45:50,104 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:50],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 11:45:50,131 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:50],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 11:45:50,156 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:50],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 11:45:50,183 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:50],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 11:45:50,208 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:50],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 11:45:50,235 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:50],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 11:45:50,261 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:50],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 11:45:50,287 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:50],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 11:45:50,313 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:50],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 11:45:50,339 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:50],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 11:45:50,365 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:50],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 11:45:50,391 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:50],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 11:45:50,416 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:50],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 11:45:53,730 INFO [http-nio-8080-exec-8] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:53],访问了[cn.tjgzy.community.service.UserService.findLoginTicket].
+2021-10-04 11:45:53,782 INFO [http-nio-8080-exec-8] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:53],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 11:45:53,811 INFO [http-nio-8080-exec-8] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:53],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 11:45:53,838 INFO [http-nio-8080-exec-8] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:53],访问了[cn.tjgzy.community.service.LikeService.findUserLikeCount].
+2021-10-04 11:45:53,870 INFO [http-nio-8080-exec-8] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:53],访问了[cn.tjgzy.community.service.FollowService.findFolloweeCount].
+2021-10-04 11:45:53,900 INFO [http-nio-8080-exec-8] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:53],访问了[cn.tjgzy.community.service.FollowService.findFollowerCount].
+2021-10-04 11:45:53,927 INFO [http-nio-8080-exec-8] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:53],访问了[cn.tjgzy.community.service.FollowService.hasFollowed].
+2021-10-04 11:45:56,542 INFO [http-nio-8080-exec-3] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:56],访问了[cn.tjgzy.community.service.UserService.findLoginTicket].
+2021-10-04 11:45:56,591 INFO [http-nio-8080-exec-3] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:56],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 11:45:56,618 INFO [http-nio-8080-exec-3] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:56],访问了[cn.tjgzy.community.service.DiscussPostService.findDiscussPostRows].
+2021-10-04 11:45:56,643 INFO [http-nio-8080-exec-3] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:56],访问了[cn.tjgzy.community.service.DiscussPostService.findDiscussPosts].
+2021-10-04 11:45:56,673 INFO [http-nio-8080-exec-3] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:56],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 11:45:56,698 INFO [http-nio-8080-exec-3] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:56],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 11:45:56,724 INFO [http-nio-8080-exec-3] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:56],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 11:45:56,751 INFO [http-nio-8080-exec-3] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:56],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 11:45:56,787 INFO [http-nio-8080-exec-3] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:56],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 11:45:56,812 INFO [http-nio-8080-exec-3] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:56],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 11:45:56,839 INFO [http-nio-8080-exec-3] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:56],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 11:45:56,866 INFO [http-nio-8080-exec-3] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:56],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 11:45:56,892 INFO [http-nio-8080-exec-3] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:56],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 11:45:56,918 INFO [http-nio-8080-exec-3] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:56],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 11:45:56,944 INFO [http-nio-8080-exec-3] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:56],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 11:45:56,969 INFO [http-nio-8080-exec-3] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:56],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 11:45:56,996 INFO [http-nio-8080-exec-3] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:56],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 11:45:57,021 INFO [http-nio-8080-exec-3] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:57],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 11:45:57,048 INFO [http-nio-8080-exec-3] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:57],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 11:45:57,073 INFO [http-nio-8080-exec-3] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:57],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 11:45:57,099 INFO [http-nio-8080-exec-3] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:57],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 11:45:57,124 INFO [http-nio-8080-exec-3] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:57],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 11:45:57,151 INFO [http-nio-8080-exec-3] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:57],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 11:45:57,176 INFO [http-nio-8080-exec-3] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:57],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 11:45:58,278 INFO [http-nio-8080-exec-6] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:58],访问了[cn.tjgzy.community.service.UserService.findLoginTicket].
+2021-10-04 11:45:58,328 INFO [http-nio-8080-exec-6] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:58],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 11:45:58,354 INFO [http-nio-8080-exec-6] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:58],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 11:45:58,379 INFO [http-nio-8080-exec-6] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:58],访问了[cn.tjgzy.community.service.LikeService.findUserLikeCount].
+2021-10-04 11:45:58,406 INFO [http-nio-8080-exec-6] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:58],访问了[cn.tjgzy.community.service.FollowService.findFolloweeCount].
+2021-10-04 11:45:58,432 INFO [http-nio-8080-exec-6] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:58],访问了[cn.tjgzy.community.service.FollowService.findFollowerCount].
+2021-10-04 11:45:58,458 INFO [http-nio-8080-exec-6] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:45:58],访问了[cn.tjgzy.community.service.FollowService.hasFollowed].
+2021-10-04 11:46:00,009 INFO [http-nio-8080-exec-10] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:46:00],访问了[cn.tjgzy.community.service.UserService.findLoginTicket].
+2021-10-04 11:46:00,058 INFO [http-nio-8080-exec-10] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:46:00],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 11:46:00,085 INFO [http-nio-8080-exec-10] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:46:00],访问了[cn.tjgzy.community.service.FollowService.follow].
+2021-10-04 11:46:00,410 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:46:00],访问了[cn.tjgzy.community.service.UserService.findLoginTicket].
+2021-10-04 11:46:00,435 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:46:00],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 11:46:00,461 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:46:00],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 11:46:00,486 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:46:00],访问了[cn.tjgzy.community.service.LikeService.findUserLikeCount].
+2021-10-04 11:46:00,512 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:46:00],访问了[cn.tjgzy.community.service.FollowService.findFolloweeCount].
+2021-10-04 11:46:00,539 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:46:00],访问了[cn.tjgzy.community.service.FollowService.findFollowerCount].
+2021-10-04 11:46:00,565 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:46:00],访问了[cn.tjgzy.community.service.FollowService.hasFollowed].
+2021-10-04 11:46:02,001 INFO [http-nio-8080-exec-5] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:46:02],访问了[cn.tjgzy.community.service.UserService.findLoginTicket].
+2021-10-04 11:46:02,057 INFO [http-nio-8080-exec-5] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:46:02],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 11:46:02,085 INFO [http-nio-8080-exec-5] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:46:02],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 11:46:02,110 INFO [http-nio-8080-exec-5] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:46:02],访问了[cn.tjgzy.community.service.FollowService.findFollowerCount].
+2021-10-04 11:46:02,137 INFO [http-nio-8080-exec-5] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:46:02],访问了[cn.tjgzy.community.service.FollowService.findFollowers].
+2021-10-04 11:46:02,187 INFO [http-nio-8080-exec-5] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:46:02],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 11:46:02,238 INFO [http-nio-8080-exec-5] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:46:02],访问了[cn.tjgzy.community.service.FollowService.hasFollowed].
+2021-10-04 11:46:04,222 INFO [http-nio-8080-exec-9] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:46:04],访问了[cn.tjgzy.community.service.UserService.findLoginTicket].
+2021-10-04 11:46:04,271 INFO [http-nio-8080-exec-9] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:46:04],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 11:46:04,298 INFO [http-nio-8080-exec-9] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:46:04],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 11:46:04,323 INFO [http-nio-8080-exec-9] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:46:04],访问了[cn.tjgzy.community.service.FollowService.findFolloweeCount].
+2021-10-04 11:46:04,349 INFO [http-nio-8080-exec-9] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:46:04],访问了[cn.tjgzy.community.service.FollowService.findFollowees].
+2021-10-04 11:47:20,761 INFO [http-nio-8080-exec-6] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:47:20],访问了[cn.tjgzy.community.service.UserService.findLoginTicket].
+2021-10-04 11:47:20,833 INFO [http-nio-8080-exec-6] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:47:20],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 11:47:20,860 INFO [http-nio-8080-exec-6] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:47:20],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 11:47:20,888 INFO [http-nio-8080-exec-6] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:47:20],访问了[cn.tjgzy.community.service.LikeService.findUserLikeCount].
+2021-10-04 11:47:20,920 INFO [http-nio-8080-exec-6] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:47:20],访问了[cn.tjgzy.community.service.FollowService.findFolloweeCount].
+2021-10-04 11:47:20,946 INFO [http-nio-8080-exec-6] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:47:20],访问了[cn.tjgzy.community.service.FollowService.findFollowerCount].
+2021-10-04 11:47:20,972 INFO [http-nio-8080-exec-6] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:47:20],访问了[cn.tjgzy.community.service.FollowService.hasFollowed].
+2021-10-04 11:47:22,782 INFO [http-nio-8080-exec-10] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:47:22],访问了[cn.tjgzy.community.service.UserService.findLoginTicket].
+2021-10-04 11:47:22,834 INFO [http-nio-8080-exec-10] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:47:22],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 11:47:22,874 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:47:22],访问了[cn.tjgzy.community.service.UserService.findLoginTicket].
+2021-10-04 11:47:22,899 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:47:22],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 11:47:24,669 INFO [http-nio-8080-exec-7] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:47:24],访问了[cn.tjgzy.community.service.UserService.findLoginTicket].
+2021-10-04 11:47:24,719 INFO [http-nio-8080-exec-7] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:47:24],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 11:47:24,763 INFO [http-nio-8080-exec-9] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:47:24],访问了[cn.tjgzy.community.service.UserService.findLoginTicket].
+2021-10-04 11:47:24,788 INFO [http-nio-8080-exec-9] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:47:24],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 11:47:33,251 INFO [http-nio-8080-exec-6] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:47:33],访问了[cn.tjgzy.community.service.UserService.findLoginTicket].
+2021-10-04 11:47:33,300 INFO [http-nio-8080-exec-6] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:47:33],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 11:47:33,335 INFO [http-nio-8080-exec-8] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:47:33],访问了[cn.tjgzy.community.service.UserService.findLoginTicket].
+2021-10-04 11:47:33,360 INFO [http-nio-8080-exec-8] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 11:47:33],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:15:22,482 INFO [restartedMain] c.t.c.CommunityApplication [StartupInfoLogger.java:55] Starting CommunityApplication using Java 1.8.0_261 on LAPTOP-2EJHU1V2 with PID 28060 (F:\Java\community\target\classes started by 龚哲毅 in F:\Java\community)
+2021-10-04 12:15:22,484 INFO [restartedMain] c.t.c.CommunityApplication [SpringApplication.java:659] No active profile set, falling back to default profiles: default
+2021-10-04 12:15:22,517 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-10-04 12:15:22,517 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-10-04 12:15:23,023 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:262] Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-10-04 12:15:23,024 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-10-04 12:15:23,041 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2021-10-04 12:15:23,571 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2021-10-04 12:15:23,580 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-10-04 12:15:23,580 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-10-04 12:15:23,581 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.53]
+2021-10-04 12:15:23,668 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-10-04 12:15:23,669 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:290] Root WebApplicationContext: initialization completed in 1151 ms
+2021-10-04 12:15:24,456 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2021-10-04 12:15:24,716 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2021-10-04 12:15:24,734 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-10-04 12:15:24,748 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/community'
+2021-10-04 12:15:24,756 INFO [restartedMain] c.t.c.CommunityApplication [StartupInfoLogger.java:61] Started CommunityApplication in 2.657 seconds (JVM running for 3.545)
+2021-10-04 12:15:49,798 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-10-04 12:15:49,798 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2021-10-04 12:15:49,799 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 0 ms
+2021-10-04 12:15:49,812 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:15:49],访问了[cn.tjgzy.community.service.UserService.findLoginTicket].
+2021-10-04 12:15:49,824 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-10-04 12:15:50,288 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-10-04 12:15:50,351 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:15:50],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:15:50,391 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:15:50],访问了[cn.tjgzy.community.service.DiscussPostService.findDiscussPostRows].
+2021-10-04 12:15:50,431 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:15:50],访问了[cn.tjgzy.community.service.DiscussPostService.findDiscussPosts].
+2021-10-04 12:15:50,463 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:15:50],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:15:50,490 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:15:50],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:15:51,295 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:15:51],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:15:51,347 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:15:51],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:15:51,382 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:15:51],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:15:51,408 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:15:51],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:15:51,437 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:15:51],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:15:51,465 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:15:51],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:15:51,494 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:15:51],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:15:51,521 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:15:51],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:15:51,550 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:15:51],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:15:51,587 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:15:51],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:15:51,616 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:15:51],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:15:51,642 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:15:51],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:15:51,670 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:15:51],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:15:51,697 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:15:51],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:15:51,728 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:15:51],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:15:51,754 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:15:51],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:15:51,783 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:15:51],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:15:51,810 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:15:51],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:15:54,162 INFO [http-nio-8080-exec-8] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:15:54],访问了[cn.tjgzy.community.service.UserService.findLoginTicket].
+2021-10-04 12:15:54,216 INFO [http-nio-8080-exec-8] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:15:54],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:15:54,246 INFO [http-nio-8080-exec-8] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:15:54],访问了[cn.tjgzy.community.service.UserService.logOut].
+2021-10-04 12:15:54,326 INFO [http-nio-8080-exec-9] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:15:54],访问了[cn.tjgzy.community.service.UserService.findLoginTicket].
+2021-10-04 12:15:54,404 INFO [http-nio-8080-exec-5] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:15:54],访问了[cn.tjgzy.community.service.UserService.findLoginTicket].
+2021-10-04 12:15:59,227 INFO [http-nio-8080-exec-4] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:15:59],访问了[cn.tjgzy.community.service.UserService.findLoginTicket].
+2021-10-04 12:16:04,691 INFO [http-nio-8080-exec-3] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:16:04],访问了[cn.tjgzy.community.service.UserService.findLoginTicket].
+2021-10-04 12:16:04,758 INFO [http-nio-8080-exec-7] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:16:04],访问了[cn.tjgzy.community.service.UserService.findLoginTicket].
+2021-10-04 12:16:39,724 INFO [restartedMain] c.t.c.CommunityApplication [StartupInfoLogger.java:55] Starting CommunityApplication using Java 1.8.0_261 on LAPTOP-2EJHU1V2 with PID 53820 (F:\Java\community\target\classes started by 龚哲毅 in F:\Java\community)
+2021-10-04 12:16:39,726 INFO [restartedMain] c.t.c.CommunityApplication [SpringApplication.java:659] No active profile set, falling back to default profiles: default
+2021-10-04 12:16:39,758 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-10-04 12:16:39,758 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-10-04 12:16:40,227 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:262] Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-10-04 12:16:40,228 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-10-04 12:16:40,245 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2021-10-04 12:16:40,736 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2021-10-04 12:16:40,742 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-10-04 12:16:40,743 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-10-04 12:16:40,743 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.53]
+2021-10-04 12:16:40,813 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-10-04 12:16:40,813 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:290] Root WebApplicationContext: initialization completed in 1054 ms
+2021-10-04 12:16:41,486 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2021-10-04 12:16:41,703 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2021-10-04 12:16:41,717 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-10-04 12:16:41,728 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/community'
+2021-10-04 12:16:41,736 INFO [restartedMain] c.t.c.CommunityApplication [StartupInfoLogger.java:61] Started CommunityApplication in 2.33 seconds (JVM running for 3.158)
+2021-10-04 12:16:50,618 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-10-04 12:16:50,619 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2021-10-04 12:16:50,620 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 1 ms
+2021-10-04 12:16:50,632 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:16:50],访问了[cn.tjgzy.community.service.UserService.findLoginTicket].
+2021-10-04 12:16:50,647 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-10-04 12:16:51,261 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-10-04 12:16:51,327 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:16:51],访问了[cn.tjgzy.community.service.DiscussPostService.findDiscussPostRows].
+2021-10-04 12:16:51,369 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:16:51],访问了[cn.tjgzy.community.service.DiscussPostService.findDiscussPosts].
+2021-10-04 12:16:51,400 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:16:51],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:16:51,428 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:16:51],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:16:52,163 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:16:52],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:16:52,215 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:16:52],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:16:52,239 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:16:52],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:16:52,267 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:16:52],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:16:52,291 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:16:52],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:16:52,320 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:16:52],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:16:52,344 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:16:52],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:16:52,371 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:16:52],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:16:52,395 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:16:52],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:16:52,423 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:16:52],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:16:52,447 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:16:52],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:16:52,474 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:16:52],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:16:52,498 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:16:52],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:16:52,525 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:16:52],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:16:52,548 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:16:52],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:16:52,576 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:16:52],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:16:52,611 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:16:52],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:16:52,638 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:16:52],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:16:54,874 INFO [http-nio-8080-exec-5] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:16:54],访问了[cn.tjgzy.community.service.UserService.findLoginTicket].
+2021-10-04 12:16:54,980 INFO [http-nio-8080-exec-9] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:16:54],访问了[cn.tjgzy.community.service.UserService.findLoginTicket].
+2021-10-04 12:17:03,405 INFO [http-nio-8080-exec-10] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:17:03],访问了[cn.tjgzy.community.service.UserService.findLoginTicket].
+2021-10-04 12:17:03,509 INFO [http-nio-8080-exec-10] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:17:03],访问了[cn.tjgzy.community.service.UserService.login].
+2021-10-04 12:17:03,629 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:17:03],访问了[cn.tjgzy.community.service.UserService.findLoginTicket].
+2021-10-04 12:17:03,656 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:17:03],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:17:03,684 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:17:03],访问了[cn.tjgzy.community.service.DiscussPostService.findDiscussPostRows].
+2021-10-04 12:17:03,712 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:17:03],访问了[cn.tjgzy.community.service.DiscussPostService.findDiscussPosts].
+2021-10-04 12:17:03,743 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:17:03],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:17:03,770 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:17:03],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:17:03,794 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:17:03],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:17:03,821 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:17:03],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:17:03,844 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:17:03],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:17:03,872 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:17:03],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:17:03,895 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:17:03],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:17:03,929 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:17:03],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:17:03,956 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:17:03],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:17:03,986 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:17:03],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:17:04,011 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:17:04],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:17:04,040 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:17:04],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:17:04,063 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:17:04],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:17:04,090 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:17:04],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:17:04,114 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:17:04],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:17:04,142 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:17:04],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:17:04,166 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:17:04],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:17:04,194 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:17:04],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:17:04,217 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:17:04],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:17:04,244 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:17:04],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:54:04,729 INFO [restartedMain] c.t.c.CommunityApplication [StartupInfoLogger.java:55] Starting CommunityApplication using Java 1.8.0_261 on LAPTOP-2EJHU1V2 with PID 19352 (F:\Java\community\target\classes started by 龚哲毅 in F:\Java\community)
+2021-10-04 12:54:04,731 INFO [restartedMain] c.t.c.CommunityApplication [SpringApplication.java:659] No active profile set, falling back to default profiles: default
+2021-10-04 12:54:04,766 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-10-04 12:54:04,766 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-10-04 12:54:05,261 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:262] Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-10-04 12:54:05,262 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-10-04 12:54:05,278 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2021-10-04 12:54:05,772 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2021-10-04 12:54:05,778 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-10-04 12:54:05,778 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-10-04 12:54:05,779 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.53]
+2021-10-04 12:54:05,851 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-10-04 12:54:05,851 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:290] Root WebApplicationContext: initialization completed in 1084 ms
+2021-10-04 12:54:06,537 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2021-10-04 12:54:06,749 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2021-10-04 12:54:06,768 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-10-04 12:54:06,778 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/community'
+2021-10-04 12:54:06,786 INFO [restartedMain] c.t.c.CommunityApplication [StartupInfoLogger.java:61] Started CommunityApplication in 2.4 seconds (JVM running for 3.264)
+2021-10-04 12:54:09,543 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-10-04 12:54:09,544 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2021-10-04 12:54:09,545 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 1 ms
+2021-10-04 12:54:09,556 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:09],访问了[cn.tjgzy.community.service.UserService.findLoginTicket].
+2021-10-04 12:54:10,364 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:10],访问了[cn.tjgzy.community.service.DiscussPostService.findDiscussPostRows].
+2021-10-04 12:54:10,385 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-10-04 12:54:11,032 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-10-04 12:54:11,089 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:11],访问了[cn.tjgzy.community.service.DiscussPostService.findDiscussPosts].
+2021-10-04 12:54:11,118 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:11],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:54:11,246 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:11],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:54:11,276 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:11],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:54:11,363 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:11],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:54:11,388 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:11],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:54:11,465 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:11],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:54:11,491 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:11],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:54:11,542 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:11],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:54:11,568 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:11],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:54:11,644 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:11],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:54:11,670 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:11],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:54:11,696 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:11],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:54:11,722 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:11],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:54:11,748 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:11],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:54:11,774 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:11],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:54:11,849 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:11],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:54:11,875 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:11],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:54:11,951 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:11],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:54:11,977 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:11],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:54:12,055 INFO [http-nio-8080-exec-1] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:12],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:54:15,597 INFO [http-nio-8080-exec-5] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:15],访问了[cn.tjgzy.community.service.UserService.findLoginTicket].
+2021-10-04 12:54:15,629 INFO [http-nio-8080-exec-5] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:15],访问了[cn.tjgzy.community.service.DiscussPostService.findDiscussPostById].
+2021-10-04 12:54:15,682 INFO [http-nio-8080-exec-5] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:15],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:54:15,709 INFO [http-nio-8080-exec-5] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:15],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:54:15,735 INFO [http-nio-8080-exec-5] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:15],访问了[cn.tjgzy.community.service.CommentService.findCommentByEntity].
+2021-10-04 12:54:15,827 INFO [http-nio-8080-exec-5] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:15],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:54:15,905 INFO [http-nio-8080-exec-5] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:15],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:54:15,933 INFO [http-nio-8080-exec-5] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:15],访问了[cn.tjgzy.community.service.CommentService.findCommentByEntity].
+2021-10-04 12:54:15,962 INFO [http-nio-8080-exec-5] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:15],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:54:15,992 INFO [http-nio-8080-exec-5] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:15],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:54:16,020 INFO [http-nio-8080-exec-5] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:16],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:54:16,046 INFO [http-nio-8080-exec-5] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:16],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:54:16,070 INFO [http-nio-8080-exec-5] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:16],访问了[cn.tjgzy.community.service.CommentService.findCommentCount].
+2021-10-04 12:54:16,096 INFO [http-nio-8080-exec-5] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:16],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:54:16,122 INFO [http-nio-8080-exec-5] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:16],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:54:16,148 INFO [http-nio-8080-exec-5] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:16],访问了[cn.tjgzy.community.service.CommentService.findCommentByEntity].
+2021-10-04 12:54:16,173 INFO [http-nio-8080-exec-5] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:16],访问了[cn.tjgzy.community.service.CommentService.findCommentCount].
+2021-10-04 12:54:16,197 INFO [http-nio-8080-exec-5] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:16],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:54:16,280 INFO [http-nio-8080-exec-5] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:16],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:54:16,306 INFO [http-nio-8080-exec-5] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:16],访问了[cn.tjgzy.community.service.CommentService.findCommentByEntity].
+2021-10-04 12:54:16,331 INFO [http-nio-8080-exec-5] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:16],访问了[cn.tjgzy.community.service.CommentService.findCommentCount].
+2021-10-04 12:54:16,356 INFO [http-nio-8080-exec-5] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:16],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:54:16,440 INFO [http-nio-8080-exec-5] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:16],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:54:16,465 INFO [http-nio-8080-exec-5] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:16],访问了[cn.tjgzy.community.service.CommentService.findCommentByEntity].
+2021-10-04 12:54:16,490 INFO [http-nio-8080-exec-5] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:16],访问了[cn.tjgzy.community.service.CommentService.findCommentCount].
+2021-10-04 12:54:16,514 INFO [http-nio-8080-exec-5] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:16],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:54:16,540 INFO [http-nio-8080-exec-5] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:16],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:54:16,566 INFO [http-nio-8080-exec-5] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:16],访问了[cn.tjgzy.community.service.CommentService.findCommentByEntity].
+2021-10-04 12:54:16,590 INFO [http-nio-8080-exec-5] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:16],访问了[cn.tjgzy.community.service.CommentService.findCommentCount].
+2021-10-04 12:54:24,243 INFO [http-nio-8080-exec-10] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:24],访问了[cn.tjgzy.community.service.UserService.findLoginTicket].
+2021-10-04 12:54:24,271 INFO [http-nio-8080-exec-10] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:24],访问了[cn.tjgzy.community.service.DiscussPostService.findDiscussPostRows].
+2021-10-04 12:54:24,320 INFO [http-nio-8080-exec-10] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:24],访问了[cn.tjgzy.community.service.DiscussPostService.findDiscussPosts].
+2021-10-04 12:54:24,349 INFO [http-nio-8080-exec-10] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:24],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:54:24,375 INFO [http-nio-8080-exec-10] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:24],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:54:24,401 INFO [http-nio-8080-exec-10] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:24],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:54:24,428 INFO [http-nio-8080-exec-10] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:24],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:54:24,454 INFO [http-nio-8080-exec-10] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:24],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:54:24,480 INFO [http-nio-8080-exec-10] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:24],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:54:24,505 INFO [http-nio-8080-exec-10] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:24],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:54:24,531 INFO [http-nio-8080-exec-10] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:24],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:54:24,557 INFO [http-nio-8080-exec-10] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:24],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:54:24,583 INFO [http-nio-8080-exec-10] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:24],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:54:24,609 INFO [http-nio-8080-exec-10] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:24],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:54:24,636 INFO [http-nio-8080-exec-10] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:24],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:54:24,663 INFO [http-nio-8080-exec-10] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:24],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:54:24,689 INFO [http-nio-8080-exec-10] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:24],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:54:24,715 INFO [http-nio-8080-exec-10] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:24],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:54:24,740 INFO [http-nio-8080-exec-10] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:24],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:54:24,766 INFO [http-nio-8080-exec-10] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:24],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:54:24,791 INFO [http-nio-8080-exec-10] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:24],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 12:54:24,817 INFO [http-nio-8080-exec-10] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:24],访问了[cn.tjgzy.community.service.UserService.findUserById].
+2021-10-04 12:54:24,842 INFO [http-nio-8080-exec-10] c.t.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2021-10-04 12:54:24],访问了[cn.tjgzy.community.service.LikeService.findEntityLikeCount].
+2021-10-04 19:44:18,992 INFO [main] c.t.c.KafkaTests [StartupInfoLogger.java:55] Starting KafkaTests using Java 1.8.0_261 on LAPTOP-2EJHU1V2 with PID 25384 (started by 龚哲毅 in F:\Java\community)
+2021-10-04 19:44:18,996 INFO [main] c.t.c.KafkaTests [SpringApplication.java:659] No active profile set, falling back to default profiles: default
+2021-10-04 19:44:19,708 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:262] Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-10-04 19:44:19,711 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-10-04 19:44:19,731 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2021-10-04 19:44:21,647 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2021-10-04 19:44:22,438 INFO [main] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:361] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 3000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-community-consumer-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = community-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	socket.connection.setup.timeout.max.ms = 127000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2021-10-04 19:44:22,543 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:119] Kafka version: 2.7.1
+2021-10-04 19:44:22,545 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:120] Kafka commitId: 61dbce85d0d41457
+2021-10-04 19:44:22,545 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:121] Kafka startTimeMs: 1633347862542
+2021-10-04 19:44:22,547 INFO [main] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:961] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Subscribed to topic(s): test
+2021-10-04 19:44:22,566 INFO [main] c.t.c.KafkaTests [StartupInfoLogger.java:61] Started KafkaTests in 3.924 seconds (JVM running for 4.987)
+2021-10-04 19:44:22,894 INFO [main] o.a.k.c.p.ProducerConfig [AbstractConfig.java:361] ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	internal.auto.downgrade.txn.commit = true
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 127000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2021-10-04 19:44:22,913 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:119] Kafka version: 2.7.1
+2021-10-04 19:44:22,914 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:120] Kafka commitId: 61dbce85d0d41457
+2021-10-04 19:44:22,914 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:121] Kafka startTimeMs: 1633347862913
+2021-10-04 19:52:33,584 INFO [main] c.t.c.KafkaTests [StartupInfoLogger.java:55] Starting KafkaTests using Java 1.8.0_261 on LAPTOP-2EJHU1V2 with PID 25196 (started by 龚哲毅 in F:\Java\community)
+2021-10-04 19:52:33,588 INFO [main] c.t.c.KafkaTests [SpringApplication.java:659] No active profile set, falling back to default profiles: default
+2021-10-04 19:52:34,123 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:262] Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-10-04 19:52:34,125 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-10-04 19:52:34,145 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2021-10-04 19:52:36,050 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2021-10-04 19:52:36,821 INFO [main] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:361] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 3000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-community-consumer-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = community-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	socket.connection.setup.timeout.max.ms = 127000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2021-10-04 19:52:36,915 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:119] Kafka version: 2.7.1
+2021-10-04 19:52:36,916 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:120] Kafka commitId: 61dbce85d0d41457
+2021-10-04 19:52:36,916 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:121] Kafka startTimeMs: 1633348356914
+2021-10-04 19:52:36,919 INFO [main] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:961] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Subscribed to topic(s): test
+2021-10-04 19:52:36,936 INFO [main] c.t.c.KafkaTests [StartupInfoLogger.java:61] Started KafkaTests in 3.719 seconds (JVM running for 4.767)
+2021-10-04 19:52:37,218 INFO [main] o.a.k.c.p.ProducerConfig [AbstractConfig.java:361] ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	internal.auto.downgrade.txn.commit = true
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 127000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2021-10-04 19:52:37,236 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:119] Kafka version: 2.7.1
+2021-10-04 19:52:37,237 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:120] Kafka commitId: 61dbce85d0d41457
+2021-10-04 19:52:37,237 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:121] Kafka startTimeMs: 1633348357236
+2021-10-04 20:20:26,583 INFO [main] c.t.c.KafkaTests [StartupInfoLogger.java:55] Starting KafkaTests using Java 1.8.0_261 on LAPTOP-2EJHU1V2 with PID 50468 (started by 龚哲毅 in F:\Java\community)
+2021-10-04 20:20:26,585 INFO [main] c.t.c.KafkaTests [SpringApplication.java:659] No active profile set, falling back to default profiles: default
+2021-10-04 20:20:27,115 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:262] Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-10-04 20:20:27,118 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-10-04 20:20:27,138 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2021-10-04 20:20:28,961 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2021-10-04 20:20:29,740 INFO [main] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:361] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 3000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-community-consumer-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = community-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	socket.connection.setup.timeout.max.ms = 127000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2021-10-04 20:20:29,832 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:119] Kafka version: 2.7.1
+2021-10-04 20:20:29,833 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:120] Kafka commitId: 61dbce85d0d41457
+2021-10-04 20:20:29,834 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:121] Kafka startTimeMs: 1633350029831
+2021-10-04 20:20:29,837 INFO [main] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:961] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Subscribed to topic(s): test
+2021-10-04 20:20:29,855 INFO [main] c.t.c.KafkaTests [StartupInfoLogger.java:61] Started KafkaTests in 3.58 seconds (JVM running for 4.465)
+2021-10-04 20:20:30,130 INFO [main] o.a.k.c.p.ProducerConfig [AbstractConfig.java:361] ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	internal.auto.downgrade.txn.commit = true
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 127000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2021-10-04 20:20:30,148 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:119] Kafka version: 2.7.1
+2021-10-04 20:20:30,149 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:120] Kafka commitId: 61dbce85d0d41457
+2021-10-04 20:20:30,149 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:121] Kafka startTimeMs: 1633350030148
+2021-10-04 21:41:12,728 INFO [main] c.t.c.KafkaTests [StartupInfoLogger.java:55] Starting KafkaTests using Java 1.8.0_261 on LAPTOP-2EJHU1V2 with PID 19212 (started by 龚哲毅 in F:\Java\community)
+2021-10-04 21:41:12,731 INFO [main] c.t.c.KafkaTests [SpringApplication.java:659] No active profile set, falling back to default profiles: default
+2021-10-04 21:41:13,573 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:262] Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-10-04 21:41:13,576 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-10-04 21:41:13,601 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2021-10-04 21:41:15,616 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2021-10-04 21:41:16,413 INFO [main] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:361] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 3000
+	auto.offset.reset = latest
+	bootstrap.servers = [47.96.13.183:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-test-consumer-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	socket.connection.setup.timeout.max.ms = 127000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2021-10-04 21:41:16,525 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:119] Kafka version: 2.7.1
+2021-10-04 21:41:16,527 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:120] Kafka commitId: 61dbce85d0d41457
+2021-10-04 21:41:16,527 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:121] Kafka startTimeMs: 1633354876524
+2021-10-04 21:41:16,530 INFO [main] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:961] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Subscribed to topic(s): test
+2021-10-04 21:41:16,552 INFO [main] c.t.c.KafkaTests [StartupInfoLogger.java:61] Started KafkaTests in 4.14 seconds (JVM running for 5.382)
+2021-10-04 21:41:16,922 INFO [main] o.a.k.c.p.ProducerConfig [AbstractConfig.java:361] ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [47.96.13.183:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	internal.auto.downgrade.txn.commit = true
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 127000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2021-10-04 21:41:16,944 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:119] Kafka version: 2.7.1
+2021-10-04 21:41:16,945 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:120] Kafka commitId: 61dbce85d0d41457
+2021-10-04 21:41:16,946 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:121] Kafka startTimeMs: 1633354876944
+2021-10-04 21:41:17,569 INFO [kafka-producer-network-thread | producer-1] o.a.k.c.Metadata [Metadata.java:279] [Producer clientId=producer-1] Cluster ID: vS5aKHpLT9mTsKQK1XDriw
+2021-10-04 21:41:17,569 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.Metadata [Metadata.java:279] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Cluster ID: vS5aKHpLT9mTsKQK1XDriw
+2021-10-04 21:41:19,761 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:844] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Discovered group coordinator 47.96.13.183:9092 (id: 2147482646 rack: null)
+2021-10-04 21:41:19,763 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:538] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] (Re-)joining group
+2021-10-04 21:41:19,903 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:538] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] (Re-)joining group
+2021-10-04 21:41:19,992 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:594] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Successfully joined group with generation Generation{generationId=1, memberId='consumer-test-consumer-group-1-fda07728-9f64-4c98-a74b-6e6b5ef5ecf7', protocol='range'}
+2021-10-04 21:41:19,994 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:626] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Finished assignment for group at generation 1: {consumer-test-consumer-group-1-fda07728-9f64-4c98-a74b-6e6b5ef5ecf7=Assignment(partitions=[test-0])}
+2021-10-04 21:41:20,067 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:754] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Successfully synced group in generation Generation{generationId=1, memberId='consumer-test-consumer-group-1-fda07728-9f64-4c98-a74b-6e6b5ef5ecf7', protocol='range'}
+2021-10-04 21:41:20,067 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:276] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Notifying assignor about the new Assignment(partitions=[test-0])
+2021-10-04 21:41:20,069 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:288] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Adding newly assigned partitions: test-0
+2021-10-04 21:41:20,114 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:1354] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Found no committed offset for partition test-0
+2021-10-04 21:41:20,161 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.SubscriptionState [SubscriptionState.java:396] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Resetting offset for partition test-0 to position FetchPosition{offset=2, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[47.96.13.183:9092 (id: 1001 rack: null)], epoch=0}}.
+2021-10-04 21:41:20,162 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer [LogAccessor.java:292] test-consumer-group: partitions assigned: [test-0]
+2021-10-04 21:41:28,615 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:307] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Revoke previously assigned partitions test-0
+2021-10-04 21:41:28,615 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer [LogAccessor.java:292] test-consumer-group: partitions revoked: [test-0]
+2021-10-04 21:41:28,615 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:1038] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Member consumer-test-consumer-group-1-fda07728-9f64-4c98-a74b-6e6b5ef5ecf7 sending LeaveGroup request to coordinator 47.96.13.183:9092 (id: 2147482646 rack: null) due to the consumer unsubscribed from all topics
+2021-10-04 21:41:28,616 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:1070] [Consumer clientId=consumer-test-consumer-group-1, groupId=test-consumer-group] Unsubscribed all topics or patterns and assigned partitions
+2021-10-04 21:41:28,670 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.m.Metrics [Metrics.java:668] Metrics scheduler closed
+2021-10-04 21:41:28,672 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.m.Metrics [Metrics.java:672] Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2021-10-04 21:41:28,672 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.m.Metrics [Metrics.java:678] Metrics reporters closed
+2021-10-04 21:41:28,674 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.u.AppInfoParser [AppInfoParser.java:83] App info kafka.consumer for consumer-test-consumer-group-1 unregistered
+2021-10-04 21:41:28,675 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer [LogAccessor.java:292] test-consumer-group: Consumer stopped
+2021-10-04 21:41:28,695 INFO [SpringApplicationShutdownHook] o.a.k.c.p.KafkaProducer [KafkaProducer.java:1205] [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2021-10-04 21:41:28,697 INFO [SpringApplicationShutdownHook] o.a.k.c.m.Metrics [Metrics.java:668] Metrics scheduler closed
+2021-10-04 21:41:28,697 INFO [SpringApplicationShutdownHook] o.a.k.c.m.Metrics [Metrics.java:672] Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2021-10-04 21:41:28,697 INFO [SpringApplicationShutdownHook] o.a.k.c.m.Metrics [Metrics.java:678] Metrics reporters closed
+2021-10-04 21:41:28,697 INFO [SpringApplicationShutdownHook] o.a.k.c.u.AppInfoParser [AppInfoParser.java:83] App info kafka.producer for producer-1 unregistered

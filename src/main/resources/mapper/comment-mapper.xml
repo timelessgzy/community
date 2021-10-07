@@ -28,6 +28,11 @@
         from comment
         where status=0 AND entity_type=#{entityType} AND entity_id=#{entityId}
     </select>
+    <select id="selectCommentById" resultType="cn.tjgzy.community.entity.Comment">
+        select <include refid="selectFields"></include>
+        from comment
+        where id = #{id}
+    </select>
 
 
 </mapper>

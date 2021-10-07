@@ -1,7 +1,10 @@
 package cn.tjgzy.community.controller;
 
+import cn.tjgzy.community.entity.Event;
 import cn.tjgzy.community.entity.User;
+import cn.tjgzy.community.event.EventProducer;
 import cn.tjgzy.community.service.LikeService;
+import cn.tjgzy.community.util.CommunityConstant;
 import cn.tjgzy.community.util.CommunityUtil;
 import cn.tjgzy.community.util.HostHolder;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +20,7 @@ import java.util.Map;
  * @create 2021-10-03-18:03
  */
 @Controller
-public class LikeController {
+public class LikeController implements CommunityConstant {
 
     @Autowired
     private LikeService likeService;
@@ -25,9 +28,12 @@ public class LikeController {
     @Autowired
     private HostHolder hostHolder;
 
+    @Autowired
+    private EventProducer eventProducer;
+
     @PostMapping("/like")
     @ResponseBody
-    public String like(int entityType, int entityId, int entityUserId) {
+    public String like(int entityType, int entityId, int entityUserId, int postId) {
         User user = hostHolder.getUser();
         // 点赞/取消点赞
         likeService.like(user.getId(), entityType, entityId, entityUserId);
@@ -38,6 +44,22 @@ public class LikeController {
         Map<String,Object> map = new HashMap<>();
         map.put("likeCount",likeCount);
         map.put("likeStatus",status);
+
+        // 往消息队列里面发送
+        // 点赞才发送，取消点赞不要发送
+        if (status == 1 ) {
+            Event event = new Event()
+                    .setTopic(TOPIC_LIKE)
+                    .setUserId(user.getId())
+                    .setEntityType(entityType)
+                    .setEntityId(entityId)
+                    .setEntityUserId(entityUserId)
+                    .setData("postId",postId);
+            eventProducer.fireEvent(event);
+        }
+
+
+
         return CommunityUtil.getJSONString(0,null,map);
     }
 }

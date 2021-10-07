@@ -2,6 +2,7 @@ package cn.tjgzy.community.config;
 
 import cn.tjgzy.community.interceptor.LoginRequiredInterceptor;
 import cn.tjgzy.community.interceptor.LoginTicketInterceptor;
+import cn.tjgzy.community.interceptor.MessageInterceptor;
 import cn.tjgzy.community.interceptor.UserInterceptor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -24,11 +25,16 @@ public class WebMvcConfig implements WebMvcConfigurer {
     @Autowired
     private LoginRequiredInterceptor loginRequiredInterceptor;
 
+    @Autowired
+    private MessageInterceptor messageInterceptor;
+
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(loginTicketInterceptor)
                 .excludePathPatterns("/**/*.css","/**/*.js","/**/*.png");
         registry.addInterceptor(loginRequiredInterceptor)
+                .excludePathPatterns("/**/*.css","/**/*.js","/**/*.png");
+        registry.addInterceptor(messageInterceptor)
                 .excludePathPatterns("/**/*.css","/**/*.js","/**/*.png");
     }
 }
