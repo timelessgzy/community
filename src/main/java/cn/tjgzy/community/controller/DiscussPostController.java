@@ -1,9 +1,7 @@
 package cn.tjgzy.community.controller;
 
-import cn.tjgzy.community.entity.Comment;
-import cn.tjgzy.community.entity.DiscussPost;
-import cn.tjgzy.community.entity.Page;
-import cn.tjgzy.community.entity.User;
+import cn.tjgzy.community.entity.*;
+import cn.tjgzy.community.event.EventProducer;
 import cn.tjgzy.community.service.CommentService;
 import cn.tjgzy.community.service.DiscussPostService;
 import cn.tjgzy.community.service.LikeService;
@@ -41,6 +39,9 @@ public class DiscussPostController implements CommunityConstant {
     @Autowired
     private LikeService likeService;
 
+    @Autowired
+    private EventProducer eventProducer;
+
     @PostMapping("/add")
     @ResponseBody
     public String addDiscussPost(String title, String content) {
@@ -54,6 +55,15 @@ public class DiscussPostController implements CommunityConstant {
         post.setCreateTime(new Date());
         post.setUserId(user.getId());
         discussPostService.addDiscussPost(post);
+
+        // 触发发帖事件，存储到es中
+        Event event = new Event()
+                .setTopic(TOPIC_PUBLISH)
+                .setEntityType(ENTITY_TYPE_POST)
+                .setEntityId(post.getId());
+        eventProducer.fireEvent(event);
+
+
         // TODO：如果插入失败，后续进行统一处理
         return CommunityUtil.getJSONString(0,"发布成功！");
     }
@@ -150,7 +160,5 @@ public class DiscussPostController implements CommunityConstant {
         model.addAttribute("comments",commentVoList);
         return "/site/discuss-detail";
     }
-
-
 
 }

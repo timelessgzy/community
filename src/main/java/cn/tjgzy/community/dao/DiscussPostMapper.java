@@ -14,6 +14,13 @@ import java.util.List;
 @Mapper
 public interface DiscussPostMapper {
 
+    /**
+     * 查询帖子，如果userId为0则查询所有帖子
+     * @param userId
+     * @param offset
+     * @param limit
+     * @return
+     */
     List<DiscussPost> selectDiscussPosts(int userId, int offset, int limit);
 
     // @Param注解用于给参数取别名,
