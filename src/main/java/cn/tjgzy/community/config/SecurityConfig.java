@@ -58,7 +58,25 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter implements Comm
                         AUTHORITY_USER,
                         AUTHORITY_ADMIN,
                         AUTHORITY_MODERATOR
-                ).anyRequest().permitAll()
+                )
+                // 置顶、加精权限控制
+                .antMatchers(
+                        "/discuss/top",
+                        "/discuss/wonderful"
+                )
+                .hasAnyAuthority(
+                        AUTHORITY_MODERATOR,
+                        AUTHORITY_ADMIN
+                )
+                // 删除权限控制——仅管理员可以删除
+                .antMatchers(
+                        "/discuss/delete"
+                )
+                .hasAnyAuthority(
+                        AUTHORITY_ADMIN
+                )
+
+                .anyRequest().permitAll()
                 // 暂时关闭防csrf攻击功能
                 .and().csrf().disable();
 

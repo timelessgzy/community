@@ -53,3 +53,12 @@ Caused by: java.net.NoRouteToHostException: No route to host: no further informa
 2021-10-07 15:34:29,093 WARN [restartedMain] o.s.d.e.s.VersionInfo [VersionInfo.java:75] Version mismatch in between Elasticsearch Client and Cluster: 7.12.1 - 7.4.2
 2021-10-07 16:10:06,068 WARN [restartedMain] o.s.d.e.s.VersionInfo [VersionInfo.java:75] Version mismatch in between Elasticsearch Client and Cluster: 7.12.1 - 7.4.2
 2021-10-07 16:10:33,093 WARN [restartedMain] o.s.d.e.s.VersionInfo [VersionInfo.java:75] Version mismatch in between Elasticsearch Client and Cluster: 7.12.1 - 7.4.2
+2021-10-07 16:41:28,018 WARN [restartedMain] o.s.d.e.s.VersionInfo [VersionInfo.java:75] Version mismatch in between Elasticsearch Client and Cluster: 7.12.1 - 7.4.2
+2021-10-07 16:41:29,291 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1119] [Consumer clientId=consumer-test-consumer-group-3, groupId=test-consumer-group] Error while fetching metadata with correlation id 2 : {delete=LEADER_NOT_AVAILABLE}
+2021-10-07 16:41:57,847 WARN [http-nio-8080-exec-5] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:207] Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.binding.BindingException: Parameter 'status' not found. Available parameters are [id, type, param1, param2]]
+2021-10-07 16:44:07,828 WARN [restartedMain] o.s.d.e.s.VersionInfo [VersionInfo.java:75] Version mismatch in between Elasticsearch Client and Cluster: 7.12.1 - 7.4.2
+2021-10-07 16:49:19,827 WARN [restartedMain] o.s.d.e.s.VersionInfo [VersionInfo.java:75] Version mismatch in between Elasticsearch Client and Cluster: 7.12.1 - 7.4.2
+2021-10-07 16:54:06,422 WARN [restartedMain] o.s.d.e.s.VersionInfo [VersionInfo.java:75] Version mismatch in between Elasticsearch Client and Cluster: 7.12.1 - 7.4.2
+2021-10-07 16:55:01,248 WARN [http-nio-8080-exec-5] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:207] Resolved [java.lang.NullPointerException]
+2021-10-07 17:02:24,731 WARN [restartedMain] o.s.d.e.s.VersionInfo [VersionInfo.java:75] Version mismatch in between Elasticsearch Client and Cluster: 7.12.1 - 7.4.2
+2021-10-07 17:03:58,820 WARN [restartedMain] o.s.d.e.s.VersionInfo [VersionInfo.java:75] Version mismatch in between Elasticsearch Client and Cluster: 7.12.1 - 7.4.2
