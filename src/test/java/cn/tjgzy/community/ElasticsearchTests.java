@@ -46,14 +46,14 @@ public class ElasticsearchTests {
 
     @Test
     public void testInsertList() {
-        discussRepository.saveAll(discussPostMapper.selectDiscussPosts(101,0,100));
-        discussRepository.saveAll(discussPostMapper.selectDiscussPosts(102,0,100));
-        discussRepository.saveAll(discussPostMapper.selectDiscussPosts(103,0,100));
+        discussRepository.saveAll(discussPostMapper.selectDiscussPosts(101,0,100,0));
+        discussRepository.saveAll(discussPostMapper.selectDiscussPosts(102,0,100,0));
+        discussRepository.saveAll(discussPostMapper.selectDiscussPosts(103,0,100,0));
     }
 
     @Test
     public void insertAll() {
-        discussRepository.saveAll(discussPostMapper.selectDiscussPosts(0,0,Integer.MAX_VALUE));
+        discussRepository.saveAll(discussPostMapper.selectDiscussPosts(0,0,Integer.MAX_VALUE,0));
     }
 
     @Test

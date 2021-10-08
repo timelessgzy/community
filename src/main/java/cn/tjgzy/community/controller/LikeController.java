@@ -7,7 +7,9 @@ import cn.tjgzy.community.service.LikeService;
 import cn.tjgzy.community.util.CommunityConstant;
 import cn.tjgzy.community.util.CommunityUtil;
 import cn.tjgzy.community.util.HostHolder;
+import cn.tjgzy.community.util.RedisKeyUtil;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -30,6 +32,9 @@ public class LikeController implements CommunityConstant {
 
     @Autowired
     private EventProducer eventProducer;
+
+    @Autowired
+    private RedisTemplate redisTemplate;
 
     @PostMapping("/like")
     @ResponseBody
@@ -56,6 +61,12 @@ public class LikeController implements CommunityConstant {
                     .setEntityUserId(entityUserId)
                     .setData("postId",postId);
             eventProducer.fireEvent(event);
+        }
+
+        // 计算帖子的分数
+        if (entityType == ENTITY_TYPE_POST) {
+            String redisKey = RedisKeyUtil.getPostScoreKey();
+            redisTemplate.opsForSet().add(redisKey,postId);
         }
 
 
