@@ -13,6 +13,9 @@ public class CookieUtil {
             throw new IllegalArgumentException();
         }
         Cookie[] cookies = request.getCookies();
+        if (cookies == null || cookies.length == 0) {
+            return null;
+        }
         for (Cookie cookie: cookies) {
             if (cookie.getName().equals(name)) {
                 return cookie.getValue();

@@ -72,7 +72,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter implements Comm
                 // 数据统计权限控制
                 .antMatchers(
                         "/discuss/delete",
-                        "/data/**"
+                        "/data/**",
+                        "/actuator/**"      // actuator模块仅管理员可以访问
                 )
                 .hasAnyAuthority(
                         AUTHORITY_ADMIN

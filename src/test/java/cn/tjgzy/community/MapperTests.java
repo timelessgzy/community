@@ -8,6 +8,7 @@ import cn.tjgzy.community.entity.DiscussPost;
 import cn.tjgzy.community.entity.LoginTicket;
 import cn.tjgzy.community.entity.Message;
 import cn.tjgzy.community.entity.User;
+import cn.tjgzy.community.service.DiscussPostService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -32,6 +33,9 @@ public class MapperTests {
 
     @Autowired
     MessageMapper messageMapper;
+
+    @Autowired
+    DiscussPostService discussPostService;
 
     @Test
     public void testSelect() {
@@ -74,5 +78,18 @@ public class MapperTests {
         messageMapper.insertMessage(message);
         int i = messageMapper.selectLetterCount("111_112");
         System.out.println(i);
+    }
+
+    @Test
+    public void initDataForTest() {
+        for (int i = 0; i < 100000; i++) {
+            DiscussPost post = new DiscussPost();
+            post.setUserId(111);
+            post.setTitle("测试数据");
+            post.setContent("测试数据哈哈哈哈");
+            post.setCreateTime(new Date());
+            post.setScore(Math.random() * 2000);
+            discussPostService.addDiscussPost(post);
+        }
     }
 }
