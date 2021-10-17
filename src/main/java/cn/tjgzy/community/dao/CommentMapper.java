@@ -32,4 +32,18 @@ public interface CommentMapper {
     int insertComment(Comment comment);
 
     Comment selectCommentById(int id);
+
+    /**
+     * 查询某用户发表的对帖子的回复
+     * @param userId
+     * @return
+     */
+    List<Comment> selectCommentsByUserId(int userId, int offset, int limit);
+
+    /**
+     * 查询某用户对帖子的回复总数
+     * @param userId
+     * @return
+     */
+    int selectCountByUserId(int userId);
 }

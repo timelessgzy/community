@@ -82,6 +82,13 @@ public class DiscussPostController implements CommunityConstant {
         // 查询帖子内容
         DiscussPost post = discussPostService.findDiscussPostById(discussPostId);
         model.addAttribute("post",post);
+
+        // 帖子已经删除
+        if (post.getStatus() == 2) {
+            return "redirect:/denied";
+        }
+
+
         // 查询帖子的作者
         User author = userService.findUserById(post.getUserId());
         model.addAttribute("user",author);
@@ -98,8 +105,11 @@ public class DiscussPostController implements CommunityConstant {
 
 
         // 登录用户的权限
-        int type = user.getType();
-        model.addAttribute("type",type);
+        if (user != null) {
+            int type = user.getType();
+            model.addAttribute("type",type);
+        }
+
 
 
         // 帖子的回复

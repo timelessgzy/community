@@ -6,7 +6,7 @@
 	<link rel="icon" href="https://static.nowcoder.com/images/logo_87_87.png"/>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
 	<link rel="stylesheet" th:href="@{/css/global.css}" />
-	<title>牛客网-个人主页</title>
+	<title>个人主页</title>
 </head>
 <body>
 	<div class="nk-container">
@@ -65,13 +65,13 @@
 				<div class="position-relative">
 					<ul class="nav nav-tabs">
 						<li class="nav-item">
-							<a class="nav-link active" href="profile.html">个人信息</a>
+							<a class="nav-link active" href="#">个人信息</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="my-post.html">我的帖子</a>
+							<a class="nav-link" th:href="@{|/user/post/${user.id}|}">我的帖子</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="my-reply.html">我的回复</a>
+							<a class="nav-link" th:href="@{|/user/comment/${user.id}|}">我的回复</a>
 						</li>
 					</ul>
 				</div>
@@ -102,7 +102,7 @@
 		</div>
 
 		<!-- 尾部 -->
-		<footer class="bg-dark">
+		<footer class="bg-dark" th:replace="index::tail">
 			<div class="container">
 				<div class="row">
 					<!-- 二维码 -->
@@ -165,7 +165,7 @@
 	</div>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.staticfile.org/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
 	<script th:src="@{/js/global.js}"></script>
 	<script th:src="@{/js/profile.js}"></script>

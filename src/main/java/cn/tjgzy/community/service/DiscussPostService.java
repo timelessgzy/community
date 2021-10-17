@@ -91,7 +91,14 @@ public class DiscussPostService {
     }
 
 
-
+    /**
+     *
+     * @param userId
+     * @param offset
+     * @param limit
+     * @param orderMode     0为按时间排序，1为按score排序
+     * @return
+     */
     public List<DiscussPost> findDiscussPosts(int userId, int offset, int limit, int orderMode) {
         if (userId == 0 && orderMode == 1) {
             return postListCache.get(offset + ":" + limit);
@@ -109,6 +116,7 @@ public class DiscussPostService {
         logger.debug("从数据库查帖子总数了");
         return discussPostMapper.selectDiscussPostRows(userId);
     }
+
 
     public int addDiscussPost(DiscussPost post) {
         if (post == null) {

@@ -10,7 +10,7 @@
 	<link rel="icon" href="https://static.nowcoder.com/images/logo_87_87.png"/>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
 	<link rel="stylesheet" th:href="@{/css/global.css}" />
-	<title>牛客网-首页</title>
+	<title>留言板-首页</title>
 </head>
 <body>
 	<div class="nk-container">
@@ -168,12 +168,12 @@
 		</div>
 
 		<!-- 尾部 -->
-		<footer class="bg-dark">
+		<footer class="bg-dark" th:fragment="tail">
 			<div class="container">
 				<div class="row">
 					<!-- 二维码 -->
 					<div class="col-4 qrcode">
-						<img src="https://uploadfiles.nowcoder.com/app/app_download.png" class="img-thumbnail" style="width:136px;" />
+						<img src="https://guli-file-tongji.oss-cn-shanghai.aliyuncs.com/avatar/%E5%B0%8F%E6%81%90%E9%BE%99.png" class="img-thumbnail" style="width:136px;" />
 					</div>
 					<!-- 公司信息 -->
 					<div class="col-8 detail-info">
@@ -219,7 +219,7 @@
 									<li class="nav-item text-white-50">
 										苏ICP备2021041288号-1 &nbsp;&nbsp;&nbsp;&nbsp;
 										<img src="http://static.nowcoder.com/company/images/res/ghs.png" style="width:18px;" />
-										京公网安备 11010502036488号
+<!--										京公网安备 11010502036488号-->
 									</li>
 								</ul>
 							</div>

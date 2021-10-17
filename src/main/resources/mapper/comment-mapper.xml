@@ -33,6 +33,20 @@
         from comment
         where id = #{id}
     </select>
+    <select id="selectCommentsByUserId" resultType="cn.tjgzy.community.entity.Comment">
+        select <include refid="selectFields"></include>
+        from comment
+        where user_id = #{userId}
+        and entity_type=1
+        order by id desc
+        limit #{offset},#{limit}
+    </select>
+    <select id="selectCountByUserId" resultType="java.lang.Integer">
+        select count(*)
+        from comment
+        where user_id = #{userId}
+        and entity_type=1
+    </select>
 
 
 </mapper>
